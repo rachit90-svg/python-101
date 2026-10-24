@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Legend of Python is a beginner-friendly Python learning repository with exercises, projects, and guided practice."
+    />
+    <title>The Legend of Python</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">🐍</span>
+          <span>The Legend of Python</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#modules">Modules</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="https://github.com/rachit90-svg/python-101" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Beginner-friendly Python course</p>
+            <h1>Learn Python by building fun projects.</h1>
+            <p class="lead">
+              Explore a guided path from hello world to classes, modules, and game projects.
+              This repository turns coding exercises into practical skill-building steps.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#modules">View course</a>
+              <a class="btn btn-secondary" href="#projects">See project ideas</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>8</strong> learning modules</li>
+              <li><strong>40+</strong> exercises</li>
+              <li><strong>Python</strong> focused</li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-chip">Course snapshot</div>
+            <h2>Python 101</h2>
+            <div class="mini-list">
+              <div>
+                <span>1</span>
+                <p>Hello World</p>
+              </div>
+              <div>
+                <span>2</span>
+                <p>Variables</p>
+              </div>
+              <div>
+                <span>3</span>
+                <p>Control Flow</p>
+              </div>
+              <div>
+                <span>4</span>
+                <p>Loops</p>
+              </div>
+              <div>
+                <span>5</span>
+                <p>Lists</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="modules" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Learning path</p>
+            <h2>From basics to object-oriented programming</h2>
+          </div>
+          <div id="moduleList" class="module-grid"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Practice ideas</p>
+            <h2>Project ideas that make learning fun</h2>
+          </div>
+          <div id="projectList" class="project-grid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Why this repo?</p>
+            <h2>Build confidence with hands-on coding.</h2>
+          </div>
+          <div class="about-cards">
+            <article>
+              <h3>Step by step</h3>
+              <p>Each lesson introduces one concept and a clear set of practice problems.</p>
+            </article>
+            <article>
+              <h3>Project-based</h3>
+              <p>Exercises progress into games, tools, and mini apps that are fun to build.</p>
+            </article>
+            <article>
+              <h3>Beginner-friendly</h3>
+              <p>Perfect for students who want a structured way to learn Python without overwhelm.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Built for learning, practice, and curiosity.</p>
+        <a href="https://github.com/rachit90-svg/python-101" target="_blank" rel="noreferrer">Open repository</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
