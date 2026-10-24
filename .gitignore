@@ -1,92 +1,24 @@
-const modules = [
-  {
-    number: "1",
-    title: "Hello World",
-    description: "Start by printing text, creating patterns, and understanding how Python code runs.",
-    exercises: ["hello_world.py", "pattern.py", "initials.py", "letter.py"]
-  },
-  {
-    number: "2",
-    title: "Variables",
-    description: "Learn how to store information and work with numbers, text, and formatting.",
-    exercises: ["temperature.py", "bmi.py", "quadratic.py", "currency.py"]
-  },
-  {
-    number: "3",
-    title: "Control Flow",
-    description: "Use if statements, comparisons, and decision-making to build interactive programs.",
-    exercises: ["coin_flip.py", "grades.py", "magic_8_ball.py", "sorting_hat.py"]
-  },
-  {
-    number: "4",
-    title: "Loops",
-    description: "Repeat actions with while and for loops to automate tasks and solve problems.",
-    exercises: ["guess_number.py", "detention.py", "fizz_buzz.py", "99_bottles.py"]
-  },
-  {
-    number: "5",
-    title: "Lists",
-    description: "Store collections of data and use common list operations to organize information.",
-    exercises: ["grocery.py", "todo.py", "inventory.py", "mixtape.py"]
-  },
-  {
-    number: "6",
-    title: "Functions",
-    description: "Write reusable code blocks to keep programs cleaner and easier to maintain.",
-    exercises: ["dry.py", "calculator.py", "fortune_cookie.py", "rocket.py"]
-  },
-  {
-    number: "7",
-    title: "Classes & Objects",
-    description: "Model real-world ideas using classes, attributes, and methods.",
-    exercises: ["restaurants.py", "bank_accounts.py", "favorite_cities.py", "pokedex.py"]
-  },
-  {
-    number: "8",
-    title: "Modules",
-    description: "Organize code across files and add reusable functionality with Python modules.",
-    exercises: ["slot_machine.py", "solar_system.py", "bday_messages.py", "zen.py"]
-  }
-];
+document.getElementById("year").textContent = new Date().getFullYear();
 
-const moduleList = document.getElementById("moduleList");
-moduleList.innerHTML = modules
-  .map(
-    (module) => `
-      <article class="module-card">
-        <span class="module-badge">Module ${module.number}</span>
-        <h3>${module.title}</h3>
-        <p>${module.description}</p>
-        <ul>
-          ${module.exercises.map((exercise) => `<li>${exercise}</li>`).join("")}
-        </ul>
-      </article>
-    `
-  )
-  .join("");
+const form = document.querySelector(".contact-form");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const button = form.querySelector("button");
+  const originalText = button.textContent;
+  button.textContent = "Inquiry Sent";
+  button.disabled = true;
 
-const projects = [
-  { emoji: "🎲", title: "Dice Roller", text: "Create a random dice simulator with user input and totals." },
-  { emoji: "🧠", title: "Quiz Game", text: "Ask questions, track score, and show a final result screen." },
-  { emoji: "🪓", title: "Hangman", text: "Build a game with guessing, hidden words, and lives remaining." },
-  { emoji: "🏦", title: "Bank Account", text: "Model deposits, withdrawals, and account details with objects." },
-  { emoji: "📋", title: "To-Do List", text: "Add, remove, and complete tasks from a simple Python app." },
-  { emoji: "🐍", title: "Snake", text: "Design a grid-based game with movement, food, and score updates." },
-  { emoji: "🧩", title: "Wordle", text: "Make a logic puzzle game using word matching and feedback hints." },
-  { emoji: "⏰", title: "Alarm Clock", text: "Build a GUI-based clock with alarms and time controls." },
-  { emoji: "🎨", title: "Paint App", text: "Create a drawing tool with colors, brushes, and shapes." },
-  { emoji: "🚀", title: "Space Invaders", text: "Game mechanics, collisions, and scoring for a retro arcade challenge." }
-];
+  setTimeout(() => {
+    button.textContent = originalText;
+    button.disabled = false;
+    form.reset();
+  }, 2000);
+});
 
-const projectList = document.getElementById("projectList");
-projectList.innerHTML = projects
-  .map(
-    (project) => `
-      <article class="project-card">
-        <span>${project.emoji}</span>
-        <h3>${project.title}</h3>
-        <p>${project.text}</p>
-      </article>
-    `
-  )
-  .join("");
+const navLinks = document.querySelectorAll(".main-nav a, .footer-links a");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.forEach((item) => item.classList.remove("active"));
+    link.classList.add("active");
+  });
+});

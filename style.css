@@ -5,131 +5,317 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="The Legend of Python is a beginner-friendly Python learning repository with exercises, projects, and guided practice."
+      content="Premium textile company website for fabrics, garments, home textiles, and custom manufacturing."
     />
-    <title>The Legend of Python</title>
+    <title>Verdant Loom | Premium Textile Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav">
-        <div class="brand">
-          <span class="brand-mark">🐍</span>
-          <span>The Legend of Python</span>
-        </div>
-        <nav class="nav-links">
-          <a href="#modules">Modules</a>
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="https://github.com/rachit90-svg/python-101" target="_blank" rel="noreferrer">GitHub</a>
-        </nav>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <p>Premium textiles • Bulk orders • Custom manufacturing</p>
+        <a href="tel:+1234567890">+1 (234) 567-890</a>
       </div>
     </header>
 
-    <main>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Verdant Loom home">
+          <span class="brand-mark">V</span>
+          <span>Verdant Loom</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#process">Process</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-btn" href="#contact">Request a Quote</a>
+      </div>
+    </header>
+
+    <main id="home">
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Beginner-friendly Python course</p>
-            <h1>Learn Python by building fun projects.</h1>
+            <p class="eyebrow">We weave quality into every thread</p>
+            <h1>Modern textile solutions for fashion, home, and industry.</h1>
             <p class="lead">
-              Explore a guided path from hello world to classes, modules, and game projects.
-              This repository turns coding exercises into practical skill-building steps.
+              Verdant Loom delivers premium fabrics, custom manufacturing, and dependable bulk supply
+              for brands, designers, wholesalers, and retailers worldwide.
             </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#modules">View course</a>
-              <a class="btn btn-secondary" href="#projects">See project ideas</a>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#products">Explore Collection</a>
+              <a class="btn btn-secondary" href="#about">Why Choose Us</a>
             </div>
             <ul class="hero-stats">
-              <li><strong>8</strong> learning modules</li>
-              <li><strong>40+</strong> exercises</li>
-              <li><strong>Python</strong> focused</li>
+              <li><strong>15+</strong><span>Years of expertise</span></li>
+              <li><strong>12k+</strong><span>Yards delivered</span></li>
+              <li><strong>98%</strong><span>Repeat clients</span></li>
             </ul>
           </div>
-
-          <div class="hero-card">
-            <div class="card-chip">Course snapshot</div>
-            <h2>Python 101</h2>
-            <div class="mini-list">
-              <div>
-                <span>1</span>
-                <p>Hello World</p>
-              </div>
-              <div>
-                <span>2</span>
-                <p>Variables</p>
-              </div>
-              <div>
-                <span>3</span>
-                <p>Control Flow</p>
-              </div>
-              <div>
-                <span>4</span>
-                <p>Loops</p>
-              </div>
-              <div>
-                <span>5</span>
-                <p>Lists</p>
-              </div>
+          <div class="hero-visual" aria-label="Textile production image">
+            <div class="visual-card large">
+              <div class="badge">Premium Cotton</div>
+              <h3>Crafted for comfort. Built for durability.</h3>
+            </div>
+            <div class="visual-card small">
+              <p>Custom dyeing</p>
+              <strong>Low MOQ</strong>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="modules" class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Learning path</p>
-            <h2>From basics to object-oriented programming</h2>
+      <section class="brands">
+        <div class="container brands-row">
+          <span>Trusted by</span>
+          <div class="brand-list">
+            <span>Fashion House</span>
+            <span>Urban Thread</span>
+            <span>Northline</span>
+            <span>Satin & Co.</span>
+            <span>Horizon Home</span>
           </div>
-          <div id="moduleList" class="module-grid"></div>
-        </div>
-      </section>
-
-      <section id="projects" class="section alt-section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Practice ideas</p>
-            <h2>Project ideas that make learning fun</h2>
-          </div>
-          <div id="projectList" class="project-grid"></div>
         </div>
       </section>
 
       <section id="about" class="section">
-        <div class="container about-grid">
+        <div class="container split-section">
+          <div class="section-copy">
+            <p class="eyebrow accent">About us</p>
+            <h2>Textile manufacturing that balances craftsmanship and scale.</h2>
+            <p>
+              From raw fibers to finished fabrics, we combine design expertise, quality control, and
+              premium sourcing to create dependable textile solutions for growing businesses.
+            </p>
+            <p>
+              Whether you need woven fabric, performance textiles, or custom-made products, our team
+              works with you from concept to delivery.
+            </p>
+            <div class="feature-list">
+              <div>
+                <strong>Custom development</strong>
+                <span>Tailored textures, tones, and finishes.</span>
+              </div>
+              <div>
+                <strong>Quality assurance</strong>
+                <span>Strict inspections at every production stage.</span>
+              </div>
+              <div>
+                <strong>Reliable delivery</strong>
+                <span>On-time fulfillment for retail and wholesale orders.</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-panel">
+              <div class="panel-top">
+                <span>Factory strength</span>
+                <strong>250+ workers</strong>
+              </div>
+              <div class="panel-bottom">
+                <span>Global shipments</span>
+                <strong>35 countries</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent">Our products</p>
+            <h2>Solutions for every textile need.</h2>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-image fabric-one"></div>
+              <div class="product-body">
+                <p class="tag">Apparel fabrics</p>
+                <h3>Cotton & blended weaves</h3>
+                <p>Soft-touch fabrics designed for everyday wear, uniforms, and premium apparel.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image fabric-two"></div>
+              <div class="product-body">
+                <p class="tag">Home textiles</p>
+                <h3>Luxury bedding & décor</h3>
+                <p>Elegant home textile collections with warmth, comfort, and refined textures.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image fabric-three"></div>
+              <div class="product-body">
+                <p class="tag">Performance textiles</p>
+                <h3>Technical & outdoor fabrics</h3>
+                <p>Durable materials engineered for activewear, industrial, and outdoor applications.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow accent">How we work</p>
+            <h2>From fabric idea to finished delivery.</h2>
+          </div>
+          <div class="process-grid">
+            <div class="process-step">
+              <span>01</span>
+              <h3>Consultation</h3>
+              <p>We understand your needs, target market, and quantity requirements.</p>
+            </div>
+            <div class="process-step">
+              <span>02</span>
+              <h3>Sampling</h3>
+              <p>We create prototypes and material samples for review and approval.</p>
+            </div>
+            <div class="process-step">
+              <span>03</span>
+              <h3>Production</h3>
+              <p>Our quality team manages weaving, finishing, and preparation at scale.</p>
+            </div>
+            <div class="process-step">
+              <span>04</span>
+              <h3>Delivery</h3>
+              <p>Products are packed, checked, and shipped with care and consistency.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section metrics">
+        <div class="container metrics-grid">
           <div>
-            <p class="eyebrow">Why this repo?</p>
-            <h2>Build confidence with hands-on coding.</h2>
+            <strong>10,000+</strong>
+            <span>Orders fulfilled</span>
           </div>
-          <div class="about-cards">
-            <article>
-              <h3>Step by step</h3>
-              <p>Each lesson introduces one concept and a clear set of practice problems.</p>
+          <div>
+            <strong>100%</strong>
+            <span>Material traceability</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Client support</span>
+          </div>
+          <div>
+            <strong>4.9/5</strong>
+            <span>Customer rating</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow accent">Testimonials</p>
+            <h2>What our clients say.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p>
+                “Verdant Loom helped us launch a premium capsule collection with excellent fabric quality
+                and dependable delivery. Their communication was outstanding.”
+              </p>
+              <div class="person">
+                <strong>Sarah T.</strong>
+                <span>Fashion Buyer</span>
+              </div>
             </article>
-            <article>
-              <h3>Project-based</h3>
-              <p>Exercises progress into games, tools, and mini apps that are fun to build.</p>
+            <article class="testimonial-card">
+              <p>
+                “We needed a trusted textile partner for custom orders and they delivered exactly what we
+                needed — on time, at scale, and with great attention to detail.”
+              </p>
+              <div class="person">
+                <strong>Michael R.</strong>
+                <span>Wholesale Manager</span>
+              </div>
             </article>
-            <article>
-              <h3>Beginner-friendly</h3>
-              <p>Perfect for students who want a structured way to learn Python without overwhelm.</p>
+            <article class="testimonial-card">
+              <p>
+                “Their design team helped us refine the material, finish, and texture for our home textiles.
+                The final result looks premium and feels even better.”
+              </p>
+              <div class="person">
+                <strong>Anika P.</strong>
+                <span>Home Decor Brand</span>
+              </div>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-wrap">
+          <div class="contact-info">
+            <p class="eyebrow accent">Let’s work together</p>
+            <h2>Build your next textile collection with us.</h2>
+            <p>
+              Tell us what you need and our specialists will help tailor the right fabrics, volumes, and
+              timing for your business.
+            </p>
+            <ul>
+              <li>Email: sales@verdantloom.com</li>
+              <li>Phone: +1 (234) 567-890</li>
+              <li>Location: 154 Riverstone Avenue, New York</li>
+            </ul>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="Your full name" />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" placeholder="Your company" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell us about your textile requirement..."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>Built for learning, practice, and curiosity.</p>
-        <a href="https://github.com/rachit90-svg/python-101" target="_blank" rel="noreferrer">Open repository</a>
+      <div class="container footer-wrap">
+        <div>
+          <a href="#home" class="brand foot-brand">
+            <span class="brand-mark">V</span>
+            <span>Verdant Loom</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p>© <span id="year"></span> Verdant Loom. All rights reserved.</p>
       </div>
     </footer>
 
